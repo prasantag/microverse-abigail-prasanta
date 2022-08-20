@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/media-style.css" />
+    <style>
+        @media screen and (max-width: 600px) {
+          body {
+            background-color: lightblue;
+          }
+        }
+
+        .flex-container {
+          display: flex;
+          background-color: DodgerBlue;
+        }
+
+    </style>
   </head>
 
   <body>
@@ -11,17 +25,44 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
+      <div class="logo">
       <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Company Logo">
-   <nav id="nav-bar">
-<ul>
-  <li><a class="nav-link" href="#features">Features</a></li>
-  <li><a class="nav-link" href="#how-it-works">How it works</a></li>
-  <li><a class="nav-link" href="#pricing">Pricing</a></li>
-</ul>
-
-</a>
-   </nav>
+      </div>
+      <div class="flex-container">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#howitworks">How it works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
+
+    <section id="howitworks">
+      <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+
+    </section>
+
+    <section id="features">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="#email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your name here" name="email">
+
+        <input type="submit" id="submit">
+      </form>
+
+    </section>
+
+    <section id="pricing">
+
+    </section>
     <!--
 
     Hello Camper!
